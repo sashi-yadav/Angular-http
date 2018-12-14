@@ -1,0 +1,8 @@
+<div class="ui three item menu" *ngIf="checkPath()">
+    <a class="item" [routerLink]="['/home']" >HOME</a>
+    <a class="item" [routerLink]="['/tickets']">TICKETS</a>
+    <a class="item" (click)="logout()">LOGOUT</a>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
